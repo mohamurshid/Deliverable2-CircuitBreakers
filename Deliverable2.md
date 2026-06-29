@@ -80,48 +80,48 @@ This architecture was developed as the **physical prototype** (with Architecture
 
 #### Part A — ESP32 #1 (MQ-5 Gas Sensor)
 
-![Architecture (b) Part A Setup 1](Architecture%20B/ESP_32_Architecture_B_part_A.jpeg)
+![Architecture (b) Part A Setup 1](Architecture%20B/ESP%2032%20Architecture%20B%20part%20A.jpeg)
 
 *Figure 3.1 — Two-board breadboard setup for Architecture (b): ESP32 #1 (MQ-5) wired alongside ESP32 #2, with the MQ-5 sensor connected at the front of the rig.*
 
-![Architecture (b) Part A Setup 2](Architecture%20B/ESP_32_Architecture_B_part_A__2_.jpeg)
+![Architecture (b) Part A Setup 2](Architecture%20B/ESP%2032%20Architecture%20B%20part%20A%20(2).jpeg)
 
 *Figure 3.2 — Alternate angle of the Part A breadboard setup showing the wiring between the MQ-5 sensor and ESP32 #1.*
 
-![Architecture (b) Part A Setup 3](Architecture%20B/ESP_32_Architecture_B_part_A__3_.jpeg)
+![Architecture (b) Part A Setup 3](Architecture%20B/ESP%2032%20Architecture%20B%20part%20A%20(3).jpeg)
 
 *Figure 3.3 — Full setup view including laptop running the Arduino IDE Serial Monitor.*
 
-![Architecture (b) Part A IDE Output](Architecture%20B/ESP_32_Architecture_B_part_A__4_.jpeg)
+![Architecture (b) Part A IDE Output](Architecture%20B/ESP%2032%20Architecture%20B%20part%20A%20(4).jpeg)
 
 *Figure 3.4 — Close-up Serial Monitor output from ESP32 #1, showing continuous MQ-5 raw ADC readings with status "HIGH – GAS DETECTED."*
-
-![Architecture (b) Part A Full Rig](Architecture%20B/ESP_32_Architecture_B_part_A__5_.jpeg)
+![Architecture (b) Part A Full Rig](Architecture%20B/ESP%2032%20Architecture%20B%20part%20A%20(5).jpeg)
 
 *Figure 3.5 — Full rig view of the Part A (ESP32 #1 / MQ-5) setup alongside the IDE output.*
 
 #### Part B — ESP32 #2 (DHT22 Sensor & Receiver)
 
-![Architecture (b) Part B Setup 1](Architecture%20B/ESp_32_Architecture_B_part_B.jpeg)
-
+![Architecture (b) Part B Setup 1](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B.jpeg)
+ 
 *Figure 3.6 — ESP32 #2 (DHT22) breadboard setup with the Serial Monitor showing the "Architecture (b) – ESP32 #1" sketch header and initial "DHT22 Error – check wiring" messages encountered during setup.*
-
-![Architecture (b) Part B Setup 2](Architecture%20B/ESp_32_Architecture_B_part_B__2_.jpeg)
-
+ 
+![Architecture (b) Part B Setup 2](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B%20(2).jpeg)
+ 
 *Figure 3.7 — Continued Serial Monitor output, now showing successful "Sent -> TEMP / HUM" readings after the wiring issue was resolved.*
-
-![Architecture (b) Part B Setup 3](Architecture%20B/ESp_32_Architecture_B_part_B__3_.jpeg)
-
+ 
+![Architecture (b) Part B Setup 3](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B%20(3).jpeg)
+ 
 *Figure 3.8 — Two-board setup for Part B with both the MQ-5 and DHT22 sensors visible, connected to their respective ESP32 boards.*
-
-![Architecture (b) Part B Troubleshooting 1](Architecture%20B/ESp_32_Architecture_B_part_B__4_.jpeg)
-
+ 
+![Architecture (b) Part B Troubleshooting 1](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B%20(4).jpeg)
+ 
 *Figure 3.9 — Troubleshooting session: referencing ChatGPT for guidance on DHT22 wiring and power supply (3.3V vs 5V) considerations after encountering wiring errors.*
-
-![Architecture (b) Part B Troubleshooting 2](Architecture%20B/ESp_32_Architecture_B_part_B__5_.jpeg)
-
+ 
+![Architecture (b) Part B Troubleshooting 2](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B%20(5).jpeg)
+ 
 *Figure 3.10 — Continued troubleshooting view showing the recommended fix (correct VCC/DATA/GND wiring and pull-up resistor placement) alongside the live IDE Serial Monitor.*
-
+ 
+---
 
 ## 4. Architecture (c): ESP32 (DHT22 + Relay) ↔ ESP32 (MQ-5)
 
