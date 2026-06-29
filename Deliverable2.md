@@ -49,7 +49,7 @@ This architecture uses a single ESP32 development board interfaced with an MQ-5 
 
 **Physical Setup with LCD Display:**
 
-![Architecture (a) Physical Setup](Architecture%20A/ARCHITECTURE_A_Physical_Set_Up.jpeg)
+![Architecture (a) Physical Setup](Architecture%20A/ARCHITECTURE%20A%20Physical%20Set%20Up.jpeg)
 
 *Figure 2.2 — Physical breadboard implementation of Architecture (a): ESP32 wired to the DHT22, MQ-5 gas sensor, and I2C LCD, with current-limiting resistors in place on the sensor lines.*
 
