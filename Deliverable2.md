@@ -127,32 +127,32 @@ This architecture was developed as the **physical prototype** (with Architecture
 
 ### 4.1 Description
 This architecture was developed as the **simulated prototype**, per the interchangeability rule with Architecture (b). It was implemented as two separate but linked Wokwi simulations:
-
+ 
 - **Part A — ESP32 (DHT22 + Relay):** Reads temperature and humidity locally via the DHT22 sensor, and also receives gas-level data transmitted from the Part B board. Based on the combined readings, this board drives the relay module (switching it ON when gas/environmental thresholds are exceeded).
 - **Part B — ESP32 (MQ-5):** Reads gas concentration from the MQ-5 sensor and transmits the readings to the Part A board over MQTT.
-
 This reflects an evolution of the original architecture from a direct wired relay connection to an MQTT-based wireless data link between the two boards, with the relay decision made on the receiving (DHT22) board.
-
+ 
 ### 4.2 Simulated Prototype (Wokwi)
-
+ 
 **Part A — DHT22 + Relay:** [https://wokwi.com/projects/468138679367092225](https://wokwi.com/projects/468138679367092225)
-
+ 
 **Part B — MQ-5 (Gas Sensor + MQTT Sender):** [https://wokwi.com/projects/468138658075753473](https://wokwi.com/projects/468138658075753473)
-
+ 
 **Part A Simulation Output:**
-
-![Architecture (c) Part A Simulation](Architecture%20C/Part_A_architecture_C.png)
-
+ 
+![Architecture (c) Part A Simulation](Architecture%20C/Part%20A%20architecture%20C.png)
+ 
 *Figure 4.1 — Wokwi simulation of Architecture (c) Part A: ESP32 wired to the DHT22 and Relay module. Serial output shows received gas data, local temperature/humidity readings, and the relay switching ON in response to threshold conditions.*
-
+ 
 **Part B Simulation Output:**
-
-![Architecture (c) Part B Simulation](Architecture%20C/Part_B_Architecture_C.png)
-
+ 
+![Architecture (c) Part B Simulation](Architecture%20C/Part%20B%20Architecture%20C.png)
+ 
 *Figure 4.2 — Wokwi simulation of Architecture (c) Part B: ESP32 wired to the MQ-5 sensor, connecting to an MQTT broker and successfully transmitting gas readings ("Gas Sent: ... [OK]") to the Part A board.*
-
+ 
 > **Note on component substitution:** As with Architecture (a), the MQ-5 sensor is not available in Wokwi's component library; the MQ-2 gas sensor was used as a pin- and behavior-compatible substitute (see Section 6.1).
-
+ 
+---
 ## 5. Technical Issues Encountered
 
 ### 5.1 MQ-5 Sensor Unavailable in Wokwi (Resolved)
@@ -165,13 +165,21 @@ This reflects an evolution of the original architecture from a direct wired rela
 
 **Resolution:** The **MQ-2** gas sensor was substituted in the Wokwi simulations for Architectures (a) and (c). The MQ-2 and MQ-5 are pin-compatible and share the same analog-voltage-output interface, so the substitution does not affect the validity of the circuit logic, wiring, or behavior being demonstrated. The physical prototypes correctly use the actual MQ-5 sensor as specified.
 
+### 5.2 Physical LCD Display Not Functioning (Unresolved)
+**Problem:** The physical LCD display connected to the ESP32 does not produce any visible output during testing, despite the firmware uploading successfully and all other components (DHT22, MQ-5) behaving as expected.
 
-## 7. Evidence of Group Work
+**Solutions explored:**
+- Verified wiring against the reference schematic — no loose connections identified.
+- Tested power supply to the LCD module — voltage levels measured correctly at VCC and GND pins.
+**Current status:** The issue remains unresolved at the time of submission. The Wokwi simulation demonstrates the intended LCD behaviour.
+
+
+## 6. Evidence of Group Work
 
 ![Group work evidence 1](groupwork_01.png)
 
-*Figure 7.1 — Team members collaborating on prototype wiring and Wokwi simulation setup during a lab session.*
+*Figure 6.1 — Team members collaborating on prototype wiring and Wokwi simulation setup during a lab session.*
 
 ![Group work evidence 2](groupwork_02.png)
 
-*Figure 7.2 — Team members working together at the lab bench during physical prototyping and testing.*
+*Figure 6.2 — Team members working together at the lab bench during physical prototyping and testing.*
