@@ -101,9 +101,9 @@ This architecture was developed as the **physical prototype** (with Architecture
 
 #### Part B — ESP32 #2 (DHT22 Sensor & Receiver)
 
-![Architecture (b) Part B Setup 1](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B.jpeg)
+![Architecture B](Architecture%20B/Architecture%20B-3.6.png)
  
-*Figure 3.6 — ESP32 #2 (DHT22) breadboard setup with the Serial Monitor showing the "Architecture (b) – ESP32 #1" sketch header and initial "DHT22 Error – check wiring" messages encountered during setup.*
+*Figure 3.6 — ESP32 #2 (DHT22) breadboard setup with the Serial Monitor.*
  
 ![Architecture (b) Part B Setup 2](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B%20(2).jpeg)
  
