@@ -117,7 +117,7 @@ This architecture was developed as the **physical prototype** (with Architecture
  
 *Figure 3.9 — Troubleshooting session: referencing ChatGPT for guidance on DHT22 wiring and power supply (3.3V vs 5V) considerations after encountering wiring errors.*
  
-![Architecture (b) Part B Troubleshooting 2](Architecture%20B/ESp%2032%20Architecture%20B%20part%20B%20(5).jpeg)
+![Architecture (b) Part B Troubleshooting 2](Architecture%20B/Architecture%20B-3.10.png)
  
 *Figure 3.10 — Continued troubleshooting view showing the recommended fix (correct VCC/DATA/GND wiring and pull-up resistor placement) alongside the live IDE Serial Monitor.*
  
