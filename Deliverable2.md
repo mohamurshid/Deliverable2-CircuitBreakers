@@ -165,13 +165,21 @@ This reflects an evolution of the original architecture from a direct wired rela
 
 **Resolution:** The **MQ-2** gas sensor was substituted in the Wokwi simulations for Architectures (a) and (c). The MQ-2 and MQ-5 are pin-compatible and share the same analog-voltage-output interface, so the substitution does not affect the validity of the circuit logic, wiring, or behavior being demonstrated. The physical prototypes correctly use the actual MQ-5 sensor as specified.
 
+### 5.2 Physical LCD Display Not Functioning (Unresolved)
+**Problem:** The physical LCD display connected to the ESP32 does not produce any visible output during testing, despite the firmware uploading successfully and all other components (DHT22, MQ-5) behaving as expected.
 
-## 7. Evidence of Group Work
+**Solutions explored:**
+- Verified wiring against the reference schematic — no loose connections identified.
+- Tested power supply to the LCD module — voltage levels measured correctly at VCC and GND pins.
+**Current status:** The issue remains unresolved at the time of submission. The Wokwi simulation demonstrates the intended LCD behaviour.
+
+
+## 6. Evidence of Group Work
 
 ![Group work evidence 1](groupwork_01.png)
 
-*Figure 7.1 — Team members collaborating on prototype wiring and Wokwi simulation setup during a lab session.*
+*Figure 6.1 — Team members collaborating on prototype wiring and Wokwi simulation setup during a lab session.*
 
 ![Group work evidence 2](groupwork_02.png)
 
-*Figure 7.2 — Team members working together at the lab bench during physical prototyping and testing.*
+*Figure 6.2 — Team members working together at the lab bench during physical prototyping and testing.*
